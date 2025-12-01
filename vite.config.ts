@@ -7,8 +7,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/taskmanagementdashboard/',
+  base: process.env.NODE_ENV === 'production' ? '/taskmanagementdashboard/' : '/',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
   },
 })
