@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Task, User, Project, TaskStatus, TaskPriority } from '../types';
+import { Task, User, Project, TaskStatus } from '../types';
 
 interface TaskStore {
   // State

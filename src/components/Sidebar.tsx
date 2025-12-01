@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, Calendar, Users, Kanban } from 'lucide-react';
+import { BarChart3, Kanban } from 'lucide-react';
 import { useTaskStore } from '../store/taskStore';
 
 interface SidebarProps {
