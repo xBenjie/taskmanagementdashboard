@@ -27,23 +27,26 @@ A modern, collaborative task management application built with React, TypeScript
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd task-management-dashboard
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -80,6 +83,7 @@ src/
 ## 🎯 Core Features
 
 ### Task Management
+
 - Create, edit, and delete tasks
 - Assign tasks to team members
 - Set priorities (Low, Medium, High, Urgent)
@@ -87,18 +91,21 @@ src/
 - Track task status (To Do, In Progress, Review, Done)
 
 ### Drag & Drop
+
 - Intuitive drag-and-drop interface
 - Move tasks between status columns
 - Real-time visual feedback
 - Smooth animations and transitions
 
 ### Analytics & Reporting
+
 - Task completion metrics
 - Priority distribution charts
 - Progress tracking over time
 - Team performance insights
 
 ### Collaboration
+
 - User assignment and permissions
 - Real-time updates (Socket.io ready)
 - Comment system on tasks
@@ -107,6 +114,7 @@ src/
 ## 🎨 Customization
 
 ### Styling
+
 The application uses Tailwind CSS for styling. You can customize the design by:
 
 1. Modifying the `tailwind.config.js` file
@@ -114,6 +122,7 @@ The application uses Tailwind CSS for styling. You can customize the design by:
 3. Adding custom styles in `src/index.css`
 
 ### State Management
+
 The app uses Zustand for state management. You can extend the store by:
 
 1. Adding new state properties in `taskStore.ts`
@@ -123,6 +132,7 @@ The app uses Zustand for state management. You can extend the store by:
 ## 🔧 Configuration
 
 ### Environment Variables
+
 Create a `.env` file in the root directory for configuration:
 
 ```env
@@ -131,24 +141,29 @@ VITE_SOCKET_URL=your_socket_url
 ```
 
 ### API Integration
+
 The application is ready for backend integration. Update the API calls in:
+
 - `src/store/taskStore.ts` for state management
 - Add API service files in `src/api/` directory
 
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
 
 ### Deploy to Vercel
+
 ```bash
 npm install -g vercel
 vercel
 ```
 
 ### Deploy to Netlify
+
 ```bash
 npm run build
 # Upload the `dist` folder to Netlify

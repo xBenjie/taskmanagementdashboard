@@ -1,6 +1,7 @@
 # Task Management Dashboard - Copilot Instructions
 
 This is a modern React-based Task Management Dashboard with the following features:
+
 - Real-time task updates and collaboration
 - Drag-and-drop task management with Kanban boards
 - Team collaboration features
@@ -8,6 +9,7 @@ This is a modern React-based Task Management Dashboard with the following featur
 - Responsive design for mobile and desktop
 
 ## Tech Stack
+
 - React 18 with TypeScript
 - Vite for fast development and building
 - Zustand for state management
@@ -18,6 +20,7 @@ This is a modern React-based Task Management Dashboard with the following featur
 - Socket.io for real-time features
 
 ## Project Structure
+
 - `/src/components` - Reusable UI components
 - `/src/pages` - Main application pages
 - `/src/hooks` - Custom React hooks
@@ -27,6 +30,7 @@ This is a modern React-based Task Management Dashboard with the following featur
 - `/src/api` - API integration layer
 
 ## Development Guidelines
+
 - Use TypeScript for all components and utilities
 - Follow React functional component patterns with hooks
 - Implement responsive design with Tailwind CSS

@@ -7,7 +7,7 @@ interface TaskStore {
   users: User[];
   currentUser: User | null;
   selectedProject: Project | null;
-  
+
   // Actions
   addTask: (task: Omit<Task, 'id' | 'createdAt' | 'updatedAt'>) => void;
   updateTask: (taskId: string, updates: Partial<Task>) => void;
@@ -74,7 +74,7 @@ export const useTaskStore = create<TaskStore>((set, get) => ({
       comments: [],
     },
   ],
-  
+
   users: [
     {
       id: '1',
@@ -91,7 +91,7 @@ export const useTaskStore = create<TaskStore>((set, get) => ({
       avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face'
     },
   ],
-  
+
   currentUser: null,
   selectedProject: null,
 
@@ -127,6 +127,6 @@ export const useTaskStore = create<TaskStore>((set, get) => ({
   },
 
   setCurrentUser: (user) => set({ currentUser: user }),
-  
+
   setSelectedProject: (project) => set({ selectedProject: project }),
 }));
